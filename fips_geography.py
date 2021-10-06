@@ -18,14 +18,14 @@ PASS = 'b3arclaw'
 
 r = change_query(HOST, PORT, DBNAME, USER, PASS,
         """
-        DROP TABLE IF EXISTS fips_geography
+        DROP TABLE IF EXISTS nist.fips_geography
         """)
 
 r = change_query(HOST, PORT, DBNAME, USER, PASS,
         """
         CREATE 
         UNLOGGED
-        TABLE fips_geography
+        TABLE nist.fips_geography
         (
         SummaryLevel text,
         StateCode text,
